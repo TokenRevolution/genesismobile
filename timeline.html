@@ -1,0 +1,420 @@
+<html>
+  <head><title>TimeLine</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+  <style>
+body {
+  font-family: Audiowide, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  overflow-y:hidden;
+}
+
+#timeline {
+  display: flex;
+  background-color: #031625;
+}
+#timeline:hover .tl-item1 {
+  width: 23.3333%;
+}
+#timeline:hover .tl-item2 {
+  width: 23.3333%;
+}
+#timeline:hover .tl-item3 {
+  width: 23.3333%;
+}
+#timeline:hover .tl-item4 {
+  width: 23.3333%;
+}
+#contenuto{
+margin-top:200%;
+    }
+#contenuto1{
+margin-top:200%;
+    }
+#contenuto2{
+margin-top:200%;
+    }
+#contenuto3{
+margin-top:200%;
+    }
+    
+.tl-item1 {
+  transform: translate3d(0, 0, 0);
+  position: relative;
+  width: 25%;
+  height: 100%;
+  min-height: 600px;
+  color: #fff;
+  overflow: hidden;
+  transition: width 0.5s ease;
+}
+.tl-item2 {
+  transform: translate3d(0, 0, 0);
+  position: relative;
+  width: 25%;
+  height: 100%;
+  min-height: 600px;
+  color: #fff;
+  overflow: hidden;
+  transition: width 0.5s ease;
+}
+.tl-item3 {
+  transform: translate3d(0, 0, 0);
+  position: relative;
+  width: 25%;
+  height: 100%;
+  min-height: 600px;
+  color: #fff;
+  overflow: hidden;
+  transition: width 0.5s ease;
+}
+.tl-item4 {
+  transform: translate3d(0, 0, 0);
+  position: relative;
+  width: 25%;
+  height: 100%;
+  min-height: 600px;
+  color: #fff;
+  overflow: hidden;
+  transition: width 0.5s ease;
+}
+.tl-item1:before, .tl-item1:after {
+  transform: translate3d(0, 0, 0);
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.tl-item2:before, .tl-item2:after {
+  transform: translate3d(0, 0, 0);
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.tl-item3:before, .tl-item3:after {
+  transform: translate3d(0, 0, 0);
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.tl-item4:before, .tl-item4:after {
+  transform: translate3d(0, 0, 0);
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.tl-item1:after {
+  background: url(genesis.png);
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: top;
+}
+.tl-item2:after {
+  background: url(begood.png);
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: top;
+}
+.tl-item3:after {
+  background: url(figocoin.png);
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: top;
+}
+.tl-item4:after {
+  background: url(kucoin.png);
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: top;
+}
+.tl-item1:hover {
+  width: 30% !important;
+}
+.tl-item2:hover {
+  width: 30% !important;
+}
+.tl-item3:hover {
+  width: 30% !important;
+}
+.tl-item4:hover {
+  width: 30% !important;
+}
+.tl-item1:hover:after {
+  opacity: 0;
+}
+.tl-item2:hover:after {
+  opacity: 0;
+}
+.tl-item3:hover:after {
+  opacity: 0;
+}
+.tl-item4:hover:after {
+  opacity: 0;
+}
+.tl-item1:hover:before {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) translateY(0);
+  transition: opacity 1s ease, transform 1s ease 0.25s;
+}
+.tl-item2:hover:before {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) translateY(0);
+  transition: opacity 1s ease, transform 1s ease 0.25s;
+}
+.tl-item3:hover:before {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) translateY(0);
+  transition: opacity 1s ease, transform 1s ease 0.25s;
+}
+.tl-item4:hover:before {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) translateY(0);
+  transition: opacity 1s ease, transform 1s ease 0.25s;
+}
+.tl-item1:hover .tl-content {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.75s ease 0.5s;
+}
+.tl-item2:hover .tl-content {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.75s ease 0.5s;
+}
+.tl-item3:hover .tl-content {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.75s ease 0.5s;
+}
+.tl-item4:hover .tl-content {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.75s ease 0.5s;
+}
+.tl-item1:hover .tl-bg {
+  filter: grayscale(0);
+}
+.tl-item2:hover .tl-bg {
+  filter: grayscale(0);
+}
+.tl-item3:hover .tl-bg {
+  filter: grayscale(0);
+}
+.tl-item4:hover .tl-bg {
+  filter: grayscale(0);
+}
+
+.tl-content {
+  transform: translate3d(0, 0, 0) translateY(25px);
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin: 0 1.618em;
+  top: 55%;
+  opacity: 0;
+}
+.tl-content h1 {
+  font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #1779cf;
+  font-size: 1.44rem;
+  font-weight: normal;
+}
+
+.tl-year {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 1;
+  border-top: 3px solid #e25303;
+  border-bottom: 3px solid #e25303;
+}
+.tl-year p {
+  font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 3em;
+  height: auto;
+  width: auto;
+  color: white;
+  background: rgb(226 83 3 / 50%);
+  font-weight: bold;
+}
+.tl-bg {
+  transform: translate3d(0, 0, 0);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center center;
+  transition: filter 0.5s ease;
+  filter: grayscale(100%);
+}
+  </style>
+  </head>
+  <body>
+    <section id="timeline">
+
+
+  <div class="tl-item1" onmouseover="primo()">
+<div class="tl-bg" style="background-image: url(https://www.wieland.com/assets/images/d/header_wieland_ny-1cdf09e4.jpg"></div>
+    <div id="phase1" class="tl-year">
+    </div>
+    <div class="tl-content">
+      <p  id="contenuto">          
+        <ul style="text-align: left;padding: 15%;font-size: 0.8em;margin-top: 100%;">
+	  <li style="font-size:1.5em;list-style:none;">GENESIS</li>
+          <li>Sviluppo e distribuzione del contratto GENESIS (GNS)</li>
+          <li>Lancio della piattaforma figocoin.it</li>
+          <li>Apertura di tutti i canali e lancio sui social media</li>
+	  <li>Creazione e costruzione della community su telegram e figocoin.it</li>
+          <li>Attivazione referral, task e sondaggi per coinvolgere la community su specifiche decisioni</li>
+          <li>Coinvolgimento partner istituzionali</li>
+          <li>Audit TechRate</li>
+	  <li>Raggiungimento delle prime 10.000 adesioni</li>
+	  <li style="list-style:none;"><button style="background:#e25303;width: 100%;height:auto;padding:2%;border-radius: 10px;border: none;margin-top: 50%;font-size: 1.5em;"><a style="text-decoration:none;color:white;" href="https://gnswhitelist.tkrev.com/">Guadagna Genesis</a></button></li>	
+       </ul>
+      </p>
+    </div>
+   <script>
+    function primo(){
+       document.getElementById("phase1").style.display = "none";
+       document.getElementById("phase2").style.display = "";
+       document.getElementById("phase3").style.display = "";
+       document.getElementById("phase4").style.display = "";
+       document.getElementById("contenuto").style.marginTop = "-100%";
+       document.getElementById("contenuto1").style.marginTop = "";
+       document.getElementById("contenuto2").style.marginTop = "";
+       document.getElementById("contenuto3").style.marginTop = "";
+}
+   </script>
+  </div>
+
+  <div class="tl-item2"  onmouseover="secondo()">
+    <div class="tl-bg" style="background-image: url(https://www.wieland.com/assets/images/6/kachel_careers_spot-eeeb207b.jpg)">
+    </div>
+    <div id="phase2" class="tl-year" onclick="cambiami()">
+    </div>
+    <div class="tl-content">
+      <p  id="contenuto1">          
+        <ul style="text-align: left;padding: 15%;font-size: 0.8em;margin-top: 100%;">
+          <li style="font-size:1.5em;list-style:none;">BeGood</li>
+          <li>Sviluppo e distribuzione del contratto BeGood (BGD)</li>
+	  <li>Installazione del nostro servizio per gli ecocompattatori</li>
+          <li>Utilizzo BeGood come premio in cambio della plastica</li>
+          <li>Utilizzo BeGood come pagamento nell’app Figorent</li>
+          <li>Campagne promozionali</li>
+          <li>Sponsorizzazioni</li>
+	  <li>Raggiungimento delle prime 30.000 adesioni</li>
+	  <li style="list-style:none;"><button style="background:#e25303;width: 100%;height:auto;padding:2%;border-radius: 10px;border: none;margin-top: 50%;font-size: 1.5em;"><a style="text-decoration:none;color:white;" href="https://gnswhitelist.tkrev.com/">Guadagna Genesis</a></button></li>	
+        </ul>
+      </p>
+    </div>
+   <script>
+    function secondo(){
+       document.getElementById("phase1").style.display = "";
+       document.getElementById("phase2").style.display = "none";
+       document.getElementById("phase3").style.display = "";
+       document.getElementById("phase4").style.display = "";
+       document.getElementById("contenuto").style.marginTop = "";
+       document.getElementById("contenuto1").style.marginTop = "-100%";
+       document.getElementById("contenuto2").style.marginTop = "";
+       document.getElementById("contenuto3").style.marginTop = ""; 
+     }
+   </script>
+  </div>
+
+  <div class="tl-item3" onmouseover="terzo()">
+    
+    <div class="tl-bg" style="background-image: url(https://www.wieland.com/assets/images/2/home_slider_empowering_success_thenewbrandpage-c8c3fca2.jpg)"></div>
+    
+    <div id="phase3"  class="tl-year">
+    </div>
+    <div class="tl-content">
+      <p  id="contenuto2">
+        <ul style="text-align: left;padding: 15%;font-size: 0.8em;margin-top: 100%;">
+	  <li style="font-size:1.5em;list-style:none;">Figo Coin</li>
+        <li>Sviluppo e distribuzione del contratto Figo Coin (FIGO)</li>
+        <li>Prima Private sale e Prima collezione NFT</li>
+        <li>Prima e seconda presale per terza collezione NFT</li>
+        <li>Influencer Marketing su Twitter, Telegram, youtube</li>
+        <li>Press release sui media main stream (tv, radio, giornali, ecc.)</li>
+        <li> Audit CERTIK</li>
+        <li> Attivazioni delle Partnership</li>
+        <li> Lancio del merchandising </li>
+	  <li style="list-style:none;"><button style="background:#e25303;width: 100%;height:auto;padding:2%;border-radius: 10px;border: none;margin-top: 50%;font-size: 1.5em;"><a style="text-decoration:none;color:white;" href="https://gnswhitelist.tkrev.com/">Guadagna Genesis</a></button></li>	
+          </ul>
+      </p>
+    </div>
+    <script>
+    function terzo(){
+       document.getElementById("phase1").style.display = "";
+       document.getElementById("phase2").style.display = "";
+       document.getElementById("phase3").style.display = "none";
+       document.getElementById("phase4").style.display = "";
+       document.getElementById("contenuto").style.marginTop = "";
+       document.getElementById("contenuto1").style.marginTop = "";
+       document.getElementById("contenuto2").style.marginTop = "-100%";
+       document.getElementById("contenuto3").style.marginTop = "";
+     }
+   </script>
+  </div>
+
+
+    <div class="tl-item4" onmouseover="quarto()">
+    <div class="tl-bg" style="background-image: url(https://www.wieland.com/assets/images/9/responsibility_3-54e5a756.jpg
+)"></div>
+    <div id="phase4"  class="tl-year">
+    </div>
+    <div class="tl-content">
+      <p id="contenuto3">     
+        <ul style="text-align: left;padding: 15%;font-size: 0.9em;margin-top: 100%;">
+	  <li style="font-size:1.5em;list-style:none;">Figo Coin Launch</li>	  
+        <li>Listing direttamente su uno dei maggiori CEX (le procedure di approvazione sono attualmente in corso con alcuni dei maggiori CEX)</li>
+        <li>Quarta collezione NFT</li>
+        <li>Listing su CoinMarketCap e CoinGecko</li>
+        <li>Attivazione del progetto scuole</li>
+        <li>Lancio management game a sfondo ecologico</li>
+        <li>Costruzione del FIgoVerse, metaverso a sfondo ecologico</li>
+	<li>Raggiungimento delle 100.000 adesioni</li>
+	  <li style="list-style:none;"><button style="background:#e25303;width: 100%;height:auto;padding:2%;border-radius: 10px;border: none;margin-top: 50%;font-size: 1.5em;"><a style="text-decoration:none;color:white;" href="https://gnswhitelist.tkrev.com/">Guadagna Genesis</a></button></li>	
+       </ul>
+      </p>
+    </div>
+    <script>
+    function quarto(){
+       document.getElementById("phase1").style.display = "";
+       document.getElementById("phase2").style.display = "";
+       document.getElementById("phase3").style.display = "";
+       document.getElementById("phase4").style.display = "none";
+       document.getElementById("contenuto").style.marginTop = "";
+       document.getElementById("contenuto1").style.marginTop = "";
+       document.getElementById("contenuto2").style.marginTop = "";
+       document.getElementById("contenuto3").style.marginTop = "-100%";
+
+    }
+   </script>
+  </div>
+</section>
+</body>
+</html>
