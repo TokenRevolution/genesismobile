@@ -131,7 +131,7 @@
     min-width: 50%
   }
   .slider__item-name {
-    font-size: 20px;
+    font-size: 100%;
   }
   .slider__item-position {
     font-size: 15px;
