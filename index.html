@@ -43,6 +43,9 @@
 		#teamdesktop{
 		display:none !important;
 		}
+		#timelinedesktop{
+		display: none !important;
+		}
 		}
 @media only screen and (max-width: 4000px) and (min-width: 1000px){
 		iframe{
@@ -74,6 +77,9 @@
 		}
 		#teammobile{
 		display:none !important;
+		}
+		#timelinemobile{
+		display: none !important;
 		}
 		}
 	</style>
@@ -465,11 +471,16 @@
 	      
 			
 			
-			
-        <div class="content-section section--hidden" data-page="6">
+	<!--road map mobile-->		
+	<div id="timelinemobile" class="content-section section--hidden" data-page="7">
+	    <iframe src="popup-slider.html" title="roadmap"></iframe>
+	</div>
+	<!--road map mobile-->		
+        <div id="timelinedesktop" class="content-section section--hidden" data-page="6">
            <iframe id="timeline" src="timeline.html" title="timeline"></iframe>
         </div>
 	      
+			
         <div class="content-section section--hidden" data-page="7">
           <h1 class="content-section__title">Contattaci</h1>
           <p class="content-section__text">Siamo qui per aiutarti e rispondere a qualsiasi domanda tu possa avere. Restiamo in attesa della vostra risposta. Puoi trovarci anche sui social media in basso a sinistra.</p>
