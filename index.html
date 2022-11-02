@@ -40,6 +40,9 @@
 		#obiettividesktop{
 		display:none !important;
 		}
+		#teamdesktop{
+		display:none !important;
+		}
 		}
 @media only screen and (max-width: 4000px) and (min-width: 1000px){
 		iframe{
@@ -67,6 +70,9 @@
 		display:none !important;
 		}
 		#obiettivimobile{
+		display:none !important;
+		}
+		#teammobile{
 		display:none !important;
 		}
 		}
@@ -412,8 +418,30 @@
 			
 			
 			
-			
-        <div class="content-section section--hidden content-section--left-align" data-page="5">
+	<!--Team per mobile-->
+	<div id="teammobile" class="content-section section--hidden content-section--left-align" data-page="6">
+	<div class="content-holder--left-align">
+            <h1 class="content-section__title">CONOSCI IL TEAM</h1>
+            <p class="content-section__text text-indent content-section__text-team">Le aziende non possono sopravvivere senza persone intelligenti che le gestiscono. Abbiamo alcune delle persone più appassionate con una visione per il tuo successo. Non tutti gli eroi indossano mantelli. Scopri le persone di domani oggi.</p>
+            <button class="content-section__button button button--secondary" id="button_team" style="color:black;">VIEW TEAM</button>
+          </div>
+          <div class="content-section__images">
+            <div class="content-section__image-holder">
+              <img class="content-section__image" src="./resources/images/persons/person1.jpg" alt="Team photo" />
+            </div>
+            <div class="content-section__image-holder">
+              <img class="content-section__image" src="./resources/images/persons/person2.jpg" alt="Team photo" />
+            </div>
+            <div class="content-section__image-holder">
+              <img class="content-section__image" src="./resources/images/persons/person3.jpg" alt="Team photo" />
+            </div>
+            <div class="content-section__image-holder">
+              <img class="content-section__image" src="./resources/images/persons/person4.jpg" alt="Team photo" />
+            </div>
+          </div>
+	</div>
+	<!--Team per desktop-->
+        <div id="teamdesktop" class="content-section section--hidden content-section--left-align" data-page="5">
           <div class="content-holder--left-align">
             <h1 class="content-section__title">CONOSCI IL TEAM</h1>
             <p class="content-section__text text-indent content-section__text-team">Le aziende non possono sopravvivere senza persone intelligenti che le gestiscono. Abbiamo alcune delle persone più appassionate con una visione per il tuo successo. Non tutti gli eroi indossano mantelli. Scopri le persone di domani oggi.</p>
@@ -435,6 +463,9 @@
           </div>
         </div>
 	      
+			
+			
+			
         <div class="content-section section--hidden" data-page="6">
            <iframe id="timeline" src="timeline.html" title="timeline"></iframe>
         </div>
