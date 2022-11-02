@@ -1,0 +1,309 @@
+<html>
+<head>
+<title></title>
+</head>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.5.0/flexslider.min.css" rel="stylesheet">
+<link href="popup-slider.css" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.5.0/jquery.flexslider-min.js"></script>
+<script src="popup-slider.js"></script>
+<style>
+html{
+  overflow-y: hidden;
+}
+.inner{
+  z-index: +999;
+}
+.culture-section {
+    background: none;
+    height: 100%;
+    background-size: cover;
+    color: black;
+    text-align: center;
+    padding: 250px 0px;
+}
+.culture-section h2, .culture-section h3 {
+    font-family:Audiowide, sans-serif;
+}
+.culture-section h2 {
+    font-weight: 800;
+    font-size: 50px;
+}
+.culture-section h3 {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 14px 0;
+    font-family: 'proxima-nova', sans-serif;
+    text-transform: capitalize;
+}
+.culture-section p {
+    margin: 36px auto;
+    font-size: 18px;
+    width: 75%;
+}
+.btn {
+    font-size: 18px !Important;
+}
+.btn-slider {
+    background-color: #fff;
+    color: #d2282e;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    padding: 12px 35px;
+    font-weight: 800;
+}
+.btn-slider:hover {
+    background-color: #dbdbdb;
+    color: #565299;
+}
+body{
+  background-color: rgba(255, 255, 255, 0);
+}
+
+/* Popup CSS Below */
+.flexslider .slides img {
+  margin: 0 auto;
+  max-width: 100px;
+}
+.ct-sliderPop {
+  width:650px !important;
+  height:650px !important;
+}
+.ct-sliderPop > .inner > .cow-map-img {
+  margin-top: 75px;
+}
+.ct-sectional .col-lg-5.col-lg-offset-1 > img {
+  cursor: pointer;
+}
+.ct-sliderPop .inner {
+  color: #fff;
+  margin-top: 110px;
+}
+.map-white-border {
+  border-bottom: 1px solid #fff;
+  width: 30%;
+  margin: 50px auto;
+}
+.ct-sliderPop-container {
+  display: none;
+  left: 0px;
+  opacity: 0;
+  top: 0px;
+  z-index: 9998;
+}
+.ct-sliderPop-container.open {
+  animation-duration: 0.35s;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+  display: block;
+}
+.ct-sliderPop-container {
+  overflow:hidden;
+  display: inline-table;
+  max-width: 650px !important;
+  left: 50%;
+  position: fixed !important; /* Required to override style inline style added by Flexslider */
+  text-align: center;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  z-index: 9997;
+}
+.ct-sliderPop-slide1 {
+  background: url(1.jpeg);
+}
+.ct-sliderPop-slide2 {
+  background: #E14F11 none repeat scroll 0% 0%;
+}
+.ct-sliderPop-slide3 {
+  background: #4F4F99 none repeat scroll 0% 0%;
+}.sliderPop.flexslider:hover .flex-direction-nav .flex-prev
+
+.ct-sliderPop .inner .ct-sliderPop-close {
+  display: inline-block;
+  margin: -1% auto 30px;
+  transition: opacity 0.25s ease-in-out 0s;
+  width: 75px;
+}
+.ct-sliderPop h1 {
+  font-family: Audiowide, sans-serif !important;
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.ct-sliderPop h1 span {
+  font-family: 'coquette', fantasy;
+  text-transform: capitalize;
+  line-height: 0.8;
+}
+.ct-sliderPop h2,
+.ct-sliderPop p {
+  font-family: Audiowide, sans-serif !important;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1;
+}
+.ct-sliderPop .fa {
+    font-size: 84px;
+    margin-bottom: 10px;
+}
+.ct-sliderPop p {
+  font-size: 18px;
+  padding-bottom: 30px;
+  width: 70%;
+  line-height: 24px;
+  margin: 0 auto;
+}
+.ct-sliderPop-container .flex-direction-nav a {
+  overflow: visible;
+}
+.flex-direction-nav a,
+.flex-direction-nav a.flex-next::before,
+.flex-direction-nav a.flex-prev::before {
+  color: #fff !important;
+}
+.flexslider .slides img {
+  width: auto !important;
+}
+.sliderPop-close {
+  width: 60px;
+}
+
+
+/* =================================
+  # Media Queries 
+================================= */
+@media (max-width: 1200px){
+
+}
+@media (max-width: 991px){
+
+}
+@media (max-width: 767px){
+
+  .ct-sliderPop {
+    height: 500px;
+    max-width: 500px !important;
+  }
+  .ct-sliderPop > .inner > .cow-map-img {
+    margin-top: 50px;
+  }
+  .ct-sliderPop-description span {
+    font-size: 50px;
+  }
+  .ct-sliderPop h2,
+  .ct-sliderPop-description {
+    font-size: 20px;
+  }
+  .ct-sliderPop h2 {
+    line-height: 0.2;
+  }
+  .ct-sliderPop-description {
+    padding-bottom: 0;
+  }
+  .ct-sliderPop .inner {
+    margin-top: 10px;
+  }
+  .ct-sliderPop-description .map-fontSize {
+    font-size: 80px;
+  }
+}
+
+@-webkit-keyframes fadeIn{0%{opacity:0}100%{opacity:1}}
+@keyframes fadeIn{0%{opacity:0}100%{opacity:1}}
+</style>
+<body>
+<section class="culture-section">
+  <div class="container">
+    <div class="col-md-8 col-md-offset-2" style="margin-top: 35%;">
+      <h3>Qui potrai vedere come la nostra vision si trasformerà in realtà. La token<span style="color:green">FIGOCOIN</span></h3>
+      <p>raggiungerà gli obbiettivi fino ad arrivare al <span style="color:green">Successo</span></p>
+    </div>
+    <span  class="btn btn-slider" style="margin-top: 35%; width:auto; background:#e25303; color:white;">Check the ROAD MAP</span>
+  </div>
+</section>
+                                              
+<div class="sliderPop" style="display:none;">
+  <div class="ct-sliderPop-container">
+    <div class="ct-sliderPop ct-sliderPop-slide1 open">
+      <div class="inner">
+        <h1>GENESIS</h1>
+        <div class="map-white-border"></div>
+        <p>
+          <ul style="text-align: left;padding: 26%;font-size: 1.1em;margin-top: -35%;">
+            <li>Sviluppo e distribuzione del contratto</li>
+            <li>Sito web prima versione e lancio sui social media</li>
+            <li> Creazione e costruzione della community  su telegram e figocoin.it</li>
+            <li>Referral, task e sondaggi per coinvolgere la community su specifiche decisioni</li>
+            <li>Coinvolgimento partner</li>
+            <li>Audit TechRate</li>
+          </ul>
+        </p>
+        <a class="ct-newsletter-close ct-sliderPop-close" href="#">
+        <img style="width:25px ! important;margin-top: -40%;margin-left: 75%;" alt="close" src="https://www.solodev.com/assets/popup-slider/popup-close.png"></a>
+      </div>
+    </div>
+    <div class="ct-sliderPop ct-sliderPop-slide2">
+      <div class="inner">
+        <h1>BeGood</h1>
+        <div class="map-white-border"></div>
+        <p>          
+        <ul style="text-align: left;padding: 26%;font-size: 1.1em;margin-top: -35%;">
+          <li>Sviluppo e distribuzione del contratto</li>
+          <li>BeGood per la plastica</li>
+          <li>BeGood come pagamento nell’app Figorent</li>
+          <li>Campagne promozionali</li>
+          <li>Sponsorizzazioni</li>
+        </ul>
+      </p>
+        <a class="ct-newsletter-close ct-sliderPop-close" href="#">
+        <img style="width:25px ! important;margin-top: -40%;margin-left: 75%;"  lt="close" src="https://www.solodev.com/assets/popup-slider/popup-close.png"></a>
+      </div>
+    </div>
+    <div class="ct-sliderPop ct-sliderPop-slide3">
+      <div class="inner">
+        <h1>FIGOCOIN</h1>
+        <div class="map-white-border"></div>
+        <p>
+          <ul style="text-align: left;padding: 26%;font-size: 1.1em;margin-top: -35%;">
+          <li>Sviluppo e distribuzione del contratto</li>
+          <li> private sale e prima collezione NFT</li>
+          <li>Presale 1 e 2 con seconda e terza collezione NFT</li>
+          <li>Staking</li>
+          <li>Influencer Marketing su Twitter, Telegram, youtube</li>
+          <li>Press release sui media main stream (tv, radio, giornali, ecc.)</li>
+          <li> Audit CERTIK</li>
+          <li> Partnership</li>
+          <li> Lancio del merchandising </li>
+        </ul>
+        </p>
+        <a class="ct-newsletter-close ct-sliderPop-close" href="#">
+        <img style="width:25px ! important;margin-top: -40%;margin-left: 75%;"  alt="close" src="https://www.solodev.com/assets/popup-slider/popup-close.png"></a>
+      </div>
+    </div>
+    <div class="ct-sliderPop ct-sliderPop-slide3">
+      <div class="inner">
+        <h1>FIGOCOIN LAUNCH</h1>
+        <div class="map-white-border"></div>
+        <p>
+          <ul style="text-align: left;padding: 26%;font-size: 1.1em;margin-top: -35%;">
+          <li>Listing direttamente su uno dei maggiori CEX (le procedure di approvazione sono attualmente in corso con alcuni dei maggiori CEX)
+          <li>Listing su CoinMarketCap e CoinGecko</li>
+          <li>Progetto scuole</li>
+          <li>Lancio management game</li>
+          <li>metaverso </li>
+          </ul>
+        </p>
+        <a class="ct-newsletter-close ct-sliderPop-close" href="#">
+        <img sstyle="width:25px ! important;margin-top: -40%;margin-left: 75%;"  alt="close" src="https://www.solodev.com/assets/popup-slider/popup-close.png"></a>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
