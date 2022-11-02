@@ -12,6 +12,12 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide"/>
     		<link rel="icon" type="image/png" href="./resources/images/favicon.ico"/>
 	<style>
+@media only screen and (max-width: 1000px) and (min-width: 1px){
+		menudesktop{
+		display:none;
+		}
+		}
+@media only screen and (max-width: 4000px) and (min-width: 1000px){
 		iframe{
 		width:100%;
 		height:70%;
@@ -27,6 +33,10 @@
 		width:100%;
 		height:100%;		
 		}
+		menumobile{
+		display:none;
+		}
+		}
 	</style>
 	</head>
 	<body>
@@ -37,7 +47,7 @@
         <span class="loader__text">Genesis</span>
       </div>
       <!-- MAIN MENU -->
-      <div class="menu">
+      <div id="menudesktop" class="menu">
         <ul class="menu-list">
           <li class="menu-list__item" data-page="1">GENESIS</li>
           <li class="menu-list__item" data-page="2">Conto alla rovescia</li>
@@ -46,6 +56,18 @@
           <li class="menu-list__item" data-page="5">Team</li>	
 	  <li class="menu-list__item" data-page="6">Road Map</li>
 	  <li class="menu-list__item" data-page="7">Contattaci</li>			
+        </ul>
+      </div>
+      <div id="menumobile" class="menu">
+        <ul class="menu-list">
+          <li id="menumobile1" class="menu-list__item" data-page="1">GENESIS</li>
+          <li id="menumobile1" class="menu-list__item" data-page="2">Conto alla rovescia</li>
+          <li id="menumobile1" class="menu-list__item" data-page="3">Vision</li>
+	  <li id="menumobile1" class="menu-list__item" data-page="4">Mission</li>
+          <li id="menumobile1" class="menu-list__item" data-page="5">Obiettivi</li>
+          <li id="menumobile1" class="menu-list__item" data-page="6">Team</li>	
+	  <li id="menumobile1" class="menu-list__item" data-page="7">Road Map</li>
+	  <li id="menumobile1" class="menu-list__item" data-page="8">Contattaci</li>
         </ul>
       </div>
       <!-- VIDEO POPUP -->
